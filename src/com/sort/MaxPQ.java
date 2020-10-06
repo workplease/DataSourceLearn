@@ -50,7 +50,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
         pq[j] = t;
     }
 
-    //由下自上的堆有序化——上浮
+    //由下自上的堆有序化——上浮，插入数据使用
     private void swim(int k){
         while (k > 1 && less(k/2,k)){
             exchange(k/2,k);
@@ -58,7 +58,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
         }
     }
 
-    //由上自下的堆有序化——下沉
+    //由上自下的堆有序化——下沉，删除最大元素使用
     private void sink(int k){
         while (2*k <= N){
             int j = 2*k;

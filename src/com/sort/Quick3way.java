@@ -1,5 +1,8 @@
 package com.sort;
 
+/**
+ * 快速排列的改进版本
+ */
 public class Quick3way {
 
     private static void sort(Comparable[] a,int lo,int hi){
